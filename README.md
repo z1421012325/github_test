@@ -60,9 +60,10 @@ github上创建一个空仓库但是并不pull拉取
 ----------------------------------------------
 一些常用的git命令
 ----------------------------------------------
-git pull 地址         拉去远程仓库文件(是仓库中的文件,不是文件夹),但需要git init 初始化文件夹(mkdir创建一个)
+git pull 地址         拉去远程仓库文件(是仓库中的文件,不是文件夹),但需要git init 初始化文件夹(mkdir创建一个)但是没有远程仓库的地址,不能修改后直接push上传到远程仓库中区,只能使用git remote add origin 远程地址  设置为上传地>址
 
-git clone 地址        克隆远程仓库文件夹连同文件一起下载,不需要mkdir创建文件夹,但是没有远程仓库的地址,不能修改后直接push上传到远程仓库中区,只能使用git remote add origin 远程地址  设置为上传地址
+
+git clone 地址        克隆远程仓库文件夹连同文件一起下载,不需要mkdir创建文件夹
 
 git push origin master(或者分支)     上传到远程中,可以选择是否主支还是分支(分支没有默认创建)
 
@@ -86,7 +87,9 @@ git push origin --delete xxx    删除远程分支
 
 git merge xxx         合并分支
 
+git log              查看版本和提交信息
 
+git reset --hard 版本号         回退到该版本,使用git log 查看版本或者远程仓库中的commit提交信息中查看
 
 
 
