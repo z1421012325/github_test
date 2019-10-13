@@ -4,5 +4,6 @@ import "fmt"
 
 func main(){
 	fmt.Println("hello word")
-	fmt.Println("你好")
+
+	fmt.Println("测试pull是不是拉取下来并和拉取的本地分支合并")
 	}
