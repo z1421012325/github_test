@@ -91,6 +91,8 @@ git log              查看版本和提交信息
 
 git reset --hard 版本号         回退到该版本,使用git log 查看版本或者远程仓库中的commit提交信息中查看
 
+ git rebase master      当远程master 进度领先本地分支的master时 使用这个 资料 https://www.codercto.com/a/45325.html
+
 
 --------------------------------------------
 pull和clone的一些区别
